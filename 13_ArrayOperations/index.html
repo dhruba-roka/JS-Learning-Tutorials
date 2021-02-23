@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Js Common Array Operations: </h1>
+
+    <script>
+        let names = ["ram", "shyam", "Hari"];
+        console.log(names);
+        console.log(names.length);
+
+        //array access using index
+        console.log(names[0]);
+        console.log(names[1])
+        console.log(names[2]);
+
+        //loop over an array
+        //foreach
+        names.forEach( function(item, index){
+            //this is function body
+            console.log(index," => ", item);
+
+        });
+
+        //forEach for nums type 
+        let nums = [12,13,16,33,44,55,66];
+        let sum = 0;
+        nums.forEach(function(it,i){
+            sum = sum + it;
+        });
+        console.log("sum: ",sum);
+
+        //adding elements to the array at last:
+        console.log(names);
+        names.push("dhruba","kamal");//push() --> element add at last
+        console.log(names);
+
+        let r2 = names.unshift("karan");//unshift()--->add element at first
+        console.log(r2);
+        console.log(names);
+
+        //delete   last element of a array:
+        let r = names.pop();//pop() ---> last elemnt remove garne
+        console.log(r);
+        console.log(names);
+
+        let r1=names.shift();//shift()--->first element dlt garne
+        console.log(r1);
+        console.log(names);
+
+        //indexof()--->position dekhaune:
+        let pos = names.indexOf("karan");
+        console.log(pos);
+
+        //splice(),slice()
+
+    </script>
+    
+    
+</body>
+</html>
