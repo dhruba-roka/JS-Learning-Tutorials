@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type Conversion in Js</h1>
+
+    <script>
+        //type conversion example:
+        let a = 12;
+        console.log(typeof a);//gives type of a
+
+        //1. string conversion
+        console.log("1. string conversion");
+        let as = String(a);
+        console.log(as);
+        console.log(typeof as);
+        console.log(a.toString);//a.toString baata ni garna sakiney
+        console.log(as.length);//as is now string type
+
+        let bool = false;
+        console.log(typeof bool);
+        let str = String(bool);
+        console.log(str);
+        //console.log(String(bool));//boolen to String
+        console.log(typeof str);
+
+        //2. Numeric Conversion:
+        console.log("2. Numeric Conversion: ");
+
+        let value = "1234";
+        console.log(value + 5);// op--> 12345
+
+         let value1 = Number(value);
+         console.log(value1 + 10);
+
+         let f1 = "123.50";
+         let f2 = Number(f1);
+         console.log(f2);
+         console.log(typeof f2);
+
+         //parseInt,parseFloat
+         let pint = parseInt(value); //parsing to Int value
+         console.log(pint);
+         console.log(typeof pint);
+
+         console.log(parseFloat(f1));
+
+         console.log(Number(false));// 0
+         console.log(Number(undefined));// NaN; not a null
+
+         //3. Boolean Conversion:
+         console.log("3. Boolean Conversion");
+
+         let ex = "abc";
+         let exc = "";
+         console.log(typeof ex);
+         let exb = Boolean(ex);
+         console.log(exb);
+         console.log(Boolean(exc));
+         console.log(typeof exb);
+         
+    </script>
+    
+</body>
+</html>
