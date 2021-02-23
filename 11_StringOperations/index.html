@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String operations for Beginners By Durgesh Tiwari</title>
+</head>
+<body>
+    <h1>5 Important string operations:</h1>
+    
+    <script>
+        //1. how to check equality of two Strings:
+        //creating string using literals
+
+    console.log("1. how to check equality of two Strings:");
+    let str1 = "Javascript";
+    let str2 = "Javascript";
+    console.log(str1);
+    console.log(str2);
+    console.log(str1==str2);
+    console.log(str1===str2);
+    if(str1 == str2){
+        console.log("Both String r equal ")
+    }
+
+    //creating string using  new String method:
+    let str3 = new String("Java");
+    let str4 = new String("Java");
+    console.log(str3);
+    console.log(str4);
+    console.log(str3==str4);
+    console.log(str3===str4);
+
+    //2. comparing two Strings
+    console.log("2. comparing two Strings:");
+    let s1 = "A"; //A -66
+    let s2 = "B"; //B -67
+    let result = s1.localeCompare(s2);
+    let result2 = s2.localeCompare(s1);
+    //66 , 67--> -1
+    //if b,a then b.localeCompare(a)-->+1
+    console.log(result);
+    console.log(result2);
+
+    //3. Replace certain word with another:
+    console.log("3. Replace certain word with another:");
+    
+    let oldString = "I hate Js";
+    let newString = oldString.replace("hate","love");
+    console.log(newString);
+    console.log(oldString);
+
+    //4. accessing character string[0]
+    //charAt(index)
+    console.log("4. accessing character string[0]");
+    console.log(oldString.charAt(0));
+    console.log(oldString.charAt(4));
+    console.log(oldString.charAt(100));
+
+    //5. converting string to array using split fuction
+    console.log("5. converting string to array using split fuction");
+    let as = oldString.split(" ");
+    console.log(as);
+    let chara = oldString.split("");
+    console.log(chara);
+
+
+
+
+
+
+
+
+    </script>
+
+    
+
+
+
+    
+</body>
+</html>
