@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Objects: </h1>
+    <script>
+        let ob ={
+            name:'ram',
+            address:"ktm",
+            phone:98468423432,
+            
+            display: function(){
+                    console.log("display properties...");
+                    console.log(this.name);
+                    console.log(this.phone);
+                }
+            }
+
+        console.log(ob);
+        console.log(typeof ob);
+        //accessing properties of objects:
+        console.log(ob.name);
+        console.log(ob["name"]);
+        console.log(ob.phone);
+        console.log(ob["phone"]);
+
+        ob.display();
+
+        //for in loop  for looping properties
+        for(let k in ob){
+            console.log(k);//key matra dekhauxa
+            console.log(k + " "+ ob[k]);
+        }
+
+        //adding properties dynamically:
+        ob.email ='dhruba.roka123@gmail.com';
+        console.log(ob);
+
+        //deleting properties dynamically:
+        delete ob.address;
+        console.log(ob);
+        
+
+
+    </script>
+    
+</body>
+</html>
