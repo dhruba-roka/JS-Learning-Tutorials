@@ -12,15 +12,15 @@
     <title>Resume Generator</title>
   </head>
   <body>
+    <!-- Here goes html code -->
 
-
-    <div class="container">
+    <div class="container" id="cv-form">
       <h1 class="text-center my-2">RESUME GENERATOR</h1>
      
       <div class="row">
          <!-- 1st column -->
       <div class="col-md-6">
-        <h1>Personal Information:</h1>
+        <h3>Personal Information:</h3>
         <div class="form-group">
           <label for="nameField">Your Name</label>
           <input 
@@ -49,7 +49,7 @@
             ></textarea>
         </div>
 
-        <p class="text-secondary my-3">Important Links</p>
+        <h4 class="text-secondary my-3">Important Links:</h4>
 
         <div class="form-group mt-2">
           <label for="fbField">Facebook</label>
@@ -81,11 +81,12 @@
       </div>
       <!-- 2nd column -->
       <div class="col-md-6">
-        <h1>Professional Information:</h1>
+        <h3>Professional Information:</h3>
 
         <div class="form-group mt-2">
           <label for="objectiveField">Objective</label>
           <textarea 
+            id="objectiveField"
             placeholder="enter your objective here"
             class="form-control"
             rows="3"
@@ -96,6 +97,7 @@
             
               <label for="">Work Experience</label>
               <textarea 
+               
                 placeholder="enter your workExperience here"
                 class="form-control workField"
                 rows="4"
@@ -111,6 +113,7 @@
         <div class="form-group mt-2" id="qualification">
           <label for="">Academic Qualification</label>
           <textarea 
+            
             placeholder="enter your AcademicQualification here"
             class="form-control qualificationField"
             rows="4"
@@ -125,10 +128,100 @@
 
       </div>
       <div class="container text-center mt-2">
-        <button class="btn btn-primary btn-lg">Generate Resume</button>
+        <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate Resume</button>
       </div>
       </div>
     </div>
+
+    <!-- cv template -->
+
+    <div class="container-fluid" id="cv-template">
+      <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+
+          <!-- first column -->
+          <img 
+          src="https://anotherjavaduke.files.wordpress.com/2018/08/avataaars-2.png" alt=""
+          class="img-fluid myimg">
+
+          <div class="container">
+            <p id="nameT1">Amit kumar Jha</p>
+            <p id="contactT">+977-9814123223, +977-9815121326</p>
+            <p id="addressT">Koteswor-32, Kathmandu, Nepal</p>
+
+            <hr>
+
+            <p><a id="fbT" href="#1">Facebook</a></p>
+            <p><a id="instaT" href="#1">Instagram</a></p>
+            <p><a id="linkedinT" href="#1">Linkedin</a></p>
+          </div>
+        </div>
+
+        <!-- 2nd column-->
+        <div class="col-md-8 py-5">
+          <h1 id="nameT2" class="text-center" style="font-weight: 900;">Amit Kumar Jha</h1>
+
+          <!-- Objective card -->
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Objective</h3>
+            </div>
+            <div class="card-body">
+                <p id="objectiveT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ratione adipisci maiores culpa ullam sapiente magnam tempora consequuntur voluptatem eaque delectus quibusdam ab aliquid labore in, dolorum quas temporibus illum sed quos. Aperiam, vitae. Accusamus blanditiis sequi adipisci quae alias, nobis ratione sunt iusto ut est nostrum nulla placeat optio!</p>
+            </div>
+          </div>
+
+          <!-- work experience card -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+               <ul id="weT">
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, in.</li>
+               
+
+               
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+               
+
+               
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+               </ul>
+            </div>
+          </div>
+
+          <!-- Academic Qualification card -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Academic Qualification</h3>
+            </div>
+            <div class="card-body">
+               <ul id="aqT">
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, in.</li>
+               
+
+              
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+               
+
+               
+                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+               </ul>
+            </div>
+            <div class="container mt-3 text-center"> 
+              <button onclick="printCV()" class="btn background">Print Resume</button> 
+
+            </div>
+          </div>
+            
+        </div>
+
+      </div>
+
+    </div>
+
 
 
 
