@@ -15,3 +15,16 @@
 .background{
     background-color:  green;
 }
+
+/* to disable the print button after printing */
+@media print{
+    .noprint{
+        visibility: hidden;
+    }
+}
+
+/* to disable page title and url after printing on printout */
+@page {
+    size: auto;
+    margin: 0;
+         }

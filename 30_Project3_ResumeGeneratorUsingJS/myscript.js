@@ -1,6 +1,6 @@
 //entering WE and AQ:
 function addNewWork(){
-    console.log("test");
+   // console.log("test");
 
     let newNode = document.createElement("textarea");
     newNode.classList.add("form-control");
@@ -17,7 +17,7 @@ function addNewWork(){
 }
 
 function addNewQualification(){
-    console.log("another test");
+    //console.log("another test");
 
     let newNode = document.createElement("textarea");
     newNode.classList.add("form-control");
@@ -87,11 +87,11 @@ function generateCV(){
 
     //code for setting image
     let file=document.getElementById("imgField").files[0];
-    console.log(file);
+    //console.log(file);
 
     let reader = new FileReader();
     reader.readAsDataURL(file);
-    console.log(reader.result);
+    //console.log(reader.result);
 
     //set the image to template
     reader.onloadend =function(){
@@ -106,7 +106,7 @@ function generateCV(){
     //print resume
     function printCV(){
         window.print();
-        console.log("print");
+        //console.log("print");
     }
 
 
